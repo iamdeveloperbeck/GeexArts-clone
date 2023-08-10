@@ -1,0 +1,107 @@
+body {
+  color: #d3d5dc;
+  letter-spacing: .05em;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.sm-btn:hover .sm-text {
+  color: #fff;
+}
+
+.sm-btn:hover .sm-arrow {
+  background-color: #fff;
+}
+
+.sm-btn:hover .sm-arrow svg {
+  color: #000;
+}
+
+.small-drop-lnk:hover .small-t {
+  color: #473bd4;
+}
+
+.box-model {
+  box-shadow: 0 6px 200px rgba(0,0,0,.15);
+}
+
+.transform-cpu  {
+  transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.transform-cpu2  {
+  transform: translate3d(0px, -3px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.hero-btn {
+  position: relative;
+  background-image: linear-gradient(117deg,#473bd4 29%,#6152d7 47%,#dabfe4 80%,#f5d7e7);
+  padding: 15px 20px;
+  border-radius: 16px;
+  transition: left 0.5s ease;
+}
+
+.text-anim {
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover .anim {
+  transform: translateX(-95px);
+}
+
+.hero-btn:hover .text-anim {
+  transform: translateX(40px);
+}
+
+.hero-btn:hover {
+  background: #473bd4;
+}
+
+.animUS.iSopening,
+.animUS.iSclosing {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.animUS.iSopening {
+  animation-name: isOpening;
+}
+
+.animUS.iSclosing {
+  animation-name: isClosing;
+}
+
+@keyframes isOpening{
+  from {
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    transform: none;
+
+    opacity: 1;
+
+    filter: blur(0);
+  }
+}
+
+@keyframes isClosing {
+  from {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.95);
+
+    opacity: 0;
+
+    filter: blur(0);
+  }
+}
