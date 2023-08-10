@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
             {menu && (
-                <div className='fixed overflow-hidden top-0 left-0 w-full h-auto bg-[#fff] z-[1001] animUS iSopening'>
+                <div className='fixed top-0 left-0 w-full h-auto bg-[#fff] z-[1001] animUS iSopening'>
                     <div className='w-full m-[0_auto] max-w-[680px] p-[0_20px]'>
                         <div className='flex items-start flex-col gap-[80px] sm:gap-[40px]'>
                             <div className='w-full flex items-center justify-between h-[55px]'>
