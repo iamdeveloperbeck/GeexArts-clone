@@ -40,9 +40,9 @@ const Navbar = () => {
     
     return (
         <>
-            <div className={`active ${show && 'translate-y-[-100%] transitionall'}`}>
-                <div className='fixed top-0 left-0 right-0 bottom-auto w-full h-[55px] bg-[#fff] flex items-center'>
-                    <div className='w-full pl-[20px] flex items-center justify-between relative z-50'>
+            <div className={`active ${show && 'translate-y-[-100%]'}`}>
+                <div className='fixed top-0 left-0 right-0 bottom-auto w-full h-[55px] bg-[#fff] flex items-center pl-[20px]'>
+                    <div className='w-full pl-[20px] flex items-center justify-between relative z-50 sm:pl-0'>
                         <a href="#" className='flex-[0.6]'><img src={logo} alt="nav logo" className='w-[120px] object-cover' /></a>
                         <NavLink to='/' className='relative flex-1 lg:hidden'>
                             <div className='absolute w-[1px] h-[40px] bg-[#d3d5dc4d] top-auto bottom-[6px]'></div>
@@ -123,10 +123,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     {menu && (
-                        <div className='absolute top-0 left-0 w-full pb-[80px] bg-[#fff] z-[1001] animUS iSopening'>
+                        <div className='absolute top-0 left-0 w-full pb-[80px] bg-[#fff] z-[1001] pl-[20px] animUS iSopening'>
                             <div className='w-full m-[0_auto] max-w-[680px] p-[0_20px] sm:pl-[0]'>
                                 <div className='flex items-start flex-col gap-[80px] sm:gap-[40px]'>
-                                    <div className='fixed top-0 left-0 w-full flex items-center justify-between h-[55px] p-[0_20px] sm:pl-0'>
+                                    <div className='fixed top-0 left-0 w-full flex items-center justify-between h-[55px] p-[0_20px] sm:pl-[20px]'>
                                         <a href="#" className='flex-[0.6]'><img src={logo} alt="nav logo" className='w-[120px] object-cover' /></a>
                                         <div className='flex items-center gap-[5px] cursor-pointer' onClick={() => setMenu(false)}>
                                             <div className='text-[#000] text-[12px] uppercase'>Close</div>
