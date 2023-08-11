@@ -6,6 +6,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  height: 200vh;
 }
 
 .sm-btn:hover .sm-text {
@@ -41,13 +42,19 @@ body {
 .hero-btn {
   position: relative;
   background-image: linear-gradient(117deg,#473bd4 29%,#6152d7 47%,#dabfe4 80%,#f5d7e7);
+  background-color: #f5d7e7;
+  background-position: center;
   padding: 15px 20px;
   border-radius: 16px;
-  transition: left 0.5s ease;
+  transition: background-image 0.5s ease;
 }
 
 .text-anim {
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
+}
+
+.anim {
+  transition: all 0.5s ease;
 }
 
 .hero-btn:hover .anim {
@@ -56,10 +63,11 @@ body {
 
 .hero-btn:hover .text-anim {
   transform: translateX(40px);
+  color: #473bd4;
 }
 
 .hero-btn:hover {
-  background: #473bd4;
+  background-image: none;
 }
 
 .animUS.iSopening,
@@ -104,4 +112,8 @@ body {
 
     filter: blur(0);
   }
+}
+
+.transitionall {
+  transition: all 0.7s ease;
 }
