@@ -124,9 +124,9 @@ const Navbar = () => {
                     </div>
                     {menu && (
                         <div className='absolute top-0 left-0 w-full pb-[80px] bg-[#fff] z-[1001] animUS iSopening'>
-                            <div className='w-full m-[0_auto] max-w-[680px] p-[0_20px]'>
+                            <div className='w-full m-[0_auto] max-w-[680px] p-[0_20px] sm:pl-[0]'>
                                 <div className='flex items-start flex-col gap-[80px] sm:gap-[40px]'>
-                                    <div className='fixed top-0 left-0 w-full flex items-center justify-between h-[55px] p-[0_20px]'>
+                                    <div className='fixed top-0 left-0 w-full flex items-center justify-between h-[55px] p-[0_20px] sm:pl-0'>
                                         <a href="#" className='flex-[0.6]'><img src={logo} alt="nav logo" className='w-[120px] object-cover' /></a>
                                         <div className='flex items-center gap-[5px] cursor-pointer' onClick={() => setMenu(false)}>
                                             <div className='text-[#000] text-[12px] uppercase'>Close</div>
@@ -136,12 +136,12 @@ const Navbar = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='flex flex-col items-start gap-[60px] w-full pt-[110px]'>
+                                    <div className='flex flex-col items-start gap-[60px] w-full pt-[110px] sm:gap-[30px] sm:pt-[80px]'>
                                         <ul className='flex flex-col items-start' role='list'>
-                                            <li className='mb-[30px]'><a href="#" className='text-[21px] hover:text-[#000]'>Work.</a></li>
-                                            <li className='mb-[30px]'><a href="#" className='text-[21px] text-[#00000080] hover:text-[#000]'>Service.</a></li>
-                                            <li className='mb-[30px]'><a href="#" className='text-[21px] hover:text-[#000]'>About.</a></li>
-                                            <li className='mb-[30px]'>
+                                            <li className='mb-[30px] sm:mb-[15px]'><a href="#" className='text-[21px] hover:text-[#000]'>Work.</a></li>
+                                            <li className='mb-[30px] sm:mb-[15px]'><a href="#" className='text-[21px] text-[#00000080] hover:text-[#000]'>Service.</a></li>
+                                            <li className='mb-[30px] sm:mb-[15px]'><a href="#" className='text-[21px] hover:text-[#000]'>About.</a></li>
+                                            <li className='mb-[30px] sm:mb-[15px]'>
                                                 <a href='https://geexarts.notion.site/Career-9f236198489c4bee9291875b7116c383' className='relative'>
                                                     <div className='flex items-center'>
                                                         <span className='text-[21px] text-[#00000080] hover:text-[#000]'>Careers.</span>
@@ -152,8 +152,8 @@ const Navbar = () => {
                                             <li className=''><a href="#" className='text-[21px] text-[#000] hover:text-[#000]'>Contact us</a></li>
                                         </ul>
                                         <a href="#" className='hero-btn w-[160px] flex items-center gap-[16px]'>
-                                            <span className='text-[#fff] text-anim'>Make Order</span>
-                                            <div className='absolute right-[18px] w-[30px] h-[30px] anim transition-all bg-[#fff] flex items-center justify-center rounded-[100%]'>
+                                            <span className='text-[#fff] text-anim relative z-20'>Make Order</span>
+                                            <div className='absolute right-[18px] w-[30px] h-[30px] anim bg-[#fff] flex items-center justify-center rounded-[100%] z-[10]'>
                                                 <MdChevronRight color='#473bd4' fontSize={19} />
                                             </div>
                                         </a>
